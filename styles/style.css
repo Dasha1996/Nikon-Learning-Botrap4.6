@@ -286,6 +286,24 @@ img.banner {
     height: 340px;
 }
 
+.course-card {
+    position: relative;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: none;
+    transition: all 0.2s;
+}
+
+.course-card:hover,
+.course-card:focus {
+    background-color: var(--highlight-color);
+    transform: translateY(-10px);
+}
+
+/*Usage: Add z-index to card title so it is clickable*/
+.card-title {
+    position: relative;
+    z-index: 5;
+}
 /*Usage: Style card title link*/
 .card-title a {
     text-transform: none !important;
@@ -294,17 +312,8 @@ img.banner {
 .card-title a:hover,
 .card-title a:focus {
     background-color: none;
-}
-/*Usage: Add box shadow*/
-.course-card {
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    border: none;
-    transition: background-color 0.2s;
-}
-
-.course-card:hover,
-.course-card:focus {
-    background-color: var(--highlight-color);
+    position: relative;
+    z-index: 5;
 }
 
 .course-card .card-body {
@@ -316,6 +325,8 @@ img.banner {
 .course-icon {
     width: 65px;
     text-align: center;
+    position: relative;
+    z-index: 5;
 }
 
 /*Usage: Add vertical space to the button*/
@@ -323,6 +334,8 @@ img.banner {
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
     text-transform: uppercase;
+    position: relative;
+    z-index: 5;
 }
 
 .course-card a.btn:hover,
@@ -331,6 +344,17 @@ img.banner {
     color: #fff;
     background-color: #343a40;
     border-color: #343a40;
+}
+
+/*Usage: Make the whole card clickable*/
+.course-card .card-link::after {
+    position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    content: "";
+    z-index: 2;
 }
 
 /*------- VIDEO SECTION ------*/
