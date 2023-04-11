@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Nikon Learning Portal</title>
+        <meta name="description" content="My Learning - Your personal developmental portal for limitless learning ">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/animate-on-scroll.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <ul>
+            <!--Quick links read by screen reader and visible when using tab on the keyboard-->
+            <li><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a></li>
+            <li><a class="sr-only sr-only-focusable" href="#footer">Skip to footer</a></li>
+        </ul> 
+        <!-- Header -->
+        <header class="container-fluid d-flex justify-content-between align-items-center p-3 shadow-sm">
+            <div class="logo-menu d-inline-flex justify-content-start align-items-center">
+                <a href="index.html" class="logo" rel="home">
+                    <img class="logo zoomIn" data-delay=".1s" src="assets/logo.png" alt="The text Nikon is in black capital letters, and it lies at the bottom of the yellow square with white streaks across the background. The image links to the home page">
+                </a>
+                <nav aria-label="Site Navigation">
+                    <div class="container menu-desktop-tablet">
+                        <ul class="d-flex justify-content-start align-items-center">
+                            <li class="p-2"><a href="#">DASHBOARD</a></li>
+                            <li class="p-2"><a href="index.html#course-catalogue">COURSE CATALOGUE</a></li>
+                            <li class="p-2"><a href="#">MY BADGES</a></li>
+                            <li class="p-2"><a href="#">EVENTS</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="login-mobile-btn d-inline-flex align-items-center justify-content-center">
+                <div class="d-inline-block login">
+                    <a href="#"  class="btn btn-yellow">LOG IN</a>
+                </div>
+                <nav class="mobile">
+                    <button class="btn toggle-mobile ml-0" type="button" data-toggle="dropdown" aria-expanded="false">
+                        <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                        <svg class="hamburger-close" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                        <span class="d-inline-block menu-text">Menu</span>
+                    </button>
+                    <div class="dropdown-menu mobile-dropdown">
+                        <a class="dropdown-item" href="#">DASHBOARD</a>
+                        <a class="dropdown-item" href="index.html#course-catalogue">COURSE CATALOGUE</a>
+                        <a class="dropdown-item" href="#">MY BADGES</a>
+                        <a class="dropdown-item" href="#">EVENTS</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- /Header-->
+        <div id="content">
+            <main>
+                <h2 class="sr-only">Main Content</h2>
+                <!--Form and Banner Section-->
+                <section class="form-section container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6 col-xs-12 banner-container banner-mobile">
+                            <img class="banner fadeInDown" data-delay=".1s" src="assets/intro-banner.jpg" alt="Yellow My and white Learnign text in capital letters with small white text 'your personal portal for limitless learning below it. There are 5 black outlined icons on the yellow circular background'">
+                        </div>
+                        <div class="col-lg-6 col-xs-12 col-form">
+                            <div class="form-container mx-auto">
+                                <p>Welcome to</p>
+                                <h1>MyLearning</h1>
+                                <form class="mt-5">
+                                    <div class="form-group">
+                                    <label for="username">USERNAME</label>
+                                    <input type="text" class="form-control" id="username" >
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="password">PASSWORD</label>
+                                    <input type="password" class="form-control" id="password">
+                                    </div>
+                                    <button type="submit" class="btn btn-yellow btn-lg w-100 d-flex justify-content-center align-items-center rounded-0 border-0">
+                                        <img src="assets/arrow-right.svg" alt="Black arrow pointing right" class="d-inline-block arrow mr-2">
+                                        LOG IN
+                                    </button>
+                                    <div class="d-flex justify-content-between mt-4">
+                                        <a href="#" class="d-block">Contact Us</a>
+                                        <a href="#" class="d-block"> Lost Password?</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xs-12 banner-container">
+                            <img class="banner bounceInRight" data-delay=".1s" src="assets/intro-banner.jpg" alt="Yellow My and white Learnign text in capital letters with small white text 'your personal portal for limitless learning below it. There are 5 black outlined icons on the yellow circular background'">
+                        </div>
+                    </div>
+                </section>
+                <!--Course Catalogue Section -->
+                <section id="course-catalogue" class="course-catalogue container mx-auto mt-5 mb-5 pb-5">
+                    <h2 class="underline">Course Catalogue</h2>
+                    <div class="container p-0 mt-4">
+                        <div class="row course-row">
+                            <!--Course Category Product and Technical-->
+                            <div class="col">
+                                <div class="fadeInDown card course-card text-center align-items-center justify-content-between h-100" data-delay=".1s">
+                                    <div class="card-body">
+                                      <h3 class="card-title"><a href="#">Product and Technical</a></h3>
+                                    </div>
+                                    <img src="assets/product.png" class="card-img-bottom course-icon" alt="a balck outline of a lamp with a cog in the middle">
+                                    <a href="#" class="btn btn-outline-dark  mx-auto d-flex justify-content-center align-items-center rounded-0">
+                                        <img src="assets/arrow-right.svg" alt="Black arrow pointing right" class="d-inline-block arrow mr-2">
+                                        View Courses
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Course Category Busienss Development -->
+                            <div class="col">
+                                <div class="fadeInDown card course-card text-center align-items-center justify-content-between h-100" data-delay=".1s">
+                                    <div class="card-body">
+                                      <h3 class="card-title"><a href="#">Business Development</a></h3>
+                                    </div>
+                                    <img src="assets/business-development.png" class="card-img-bottom course-icon" alt="the black outline of 2 hands with the outline of the house in the middle">
+                                    <a href="#" class="btn btn-outline-dark mx-auto d-flex justify-content-center align-items-center rounded-0">
+                                        <img src="assets/arrow-right.svg" alt="Black arrow pointing right" class="d-inline-block arrow mr-2">
+                                        View Courses
+                                    </a>
+                                </div>
+                            </div>
+                            <!--Course Category Optics and Manufacturing-->
+                            <div class="col">
+                                <div class="fadeInDown card course-card text-center align-items-center justify-content-between h-100" data-delay=".1s">
+                                    <div class="card-body">
+                                      <h3 class="card-title"><a href="#">Optics and Manufacturing</a></h3>
+                                    </div>
+                                    <img src="assets/optics.png" class="card-img-bottom course-icon" alt="the black outline of glasses">
+                                    <a href="#" class="btn btn-outline-dark mx-auto d-flex justify-content-center align-items-center rounded-0">
+                                        <img src="assets/arrow-right.svg" alt="Black arrow pointing right" class="d-inline-block arrow mr-2">
+                                        View Courses
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Course Category CPD -->
+                            <div class="col">
+                                <div class="fadeInDown card course-card text-center align-items-center justify-content-between h-100" data-delay=".1s">
+                                    <div class="card-body">
+                                      <h3 class="card-title"><a href="#">CPD</a></h3>
+                                    </div>
+                                    <img src="assets/cpd.png" class="card-img-bottom course-icon" alt="the black outline of the graduation cap">
+                                    <a href="#" class="btn btn-outline-dark mx-auto d-flex justify-content-center align-items-center rounded-0">
+                                        <img src="assets/arrow-right.svg" alt="Black arrow pointing right" class="d-inline-block arrow mr-2">
+                                        View Courses
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Course Category Business Management -->
+                            <div class="col">
+                                <div class="fadeInDown card course-card text-center align-items-center justify-content-between h-100" data-delay=".1s">
+                                    <div class="card-body">
+                                      <h3 class="card-title"><a href="#">Business Management</a></h3>
+                                    </div>
+                                    <img src="assets/business-management.png" class="card-img-bottom course-icon" alt="the black outline of a hand. Above it there is a white circle with black border with the user icon outline in the middle">
+                                    <a href="#" class="btn btn-outline-dark mx-auto d-flex justify-content-center align-items-center rounded-0">
+                                        <img src="assets/arrow-right.svg" alt="Black arrow pointing right" class="d-inline-block arrow mr-2">
+                                        View Courses
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--Video Section -->
+                <section class="video-section container-fluid pt-5 py-5">
+                    <div class="grey-block"></div>
+                    <div class="video-card">
+                        <img class="video-placeholder fadeInDown" data-delay=".1s" src="assets/videoplaceholder.png">
+                        <div class="text-container mt-5 pt-3">
+                            <h2 class=" mb-3">About Nikon Lenswear UK</h2>
+                            <p>A pioneer in ophthalmic lens technology, Nikon Lenswear supports premiun independent opticians across the UK to grow and differentiate their business</p>
+                        </div>
+                    </div>
+                </section>
+                <!-- / Video Section-->
+            
+            </main>
+            <!--Footer -->
+            <footer id="footer" class="footer container-fluid">
+                <div class="container">
+                    <div class="row row-cols-md-3 row-cols-1 align-items-center justify-content-start">
+                        <!-- Address -->
+                        <div class="col">
+                            <address>
+                                <p><strong>Nikon Optical Ltd</strong></p>
+                                <p><strong>Tanners Drive</strong></p>
+                                <p><strong>Milton Keynes, Bucks MK14 5BU</strong></p>
+                                <p><strong>United Kingdom</strong></p>
+                            </address>
+                        </div>
+                        <!--Polcies -->
+                        <div class="col d-flex flex-column align-items-center">
+                            <div>
+                            <a href="#" class="d-block pb-3 policy">Data retention summary</a>
+                            <a href="#" class="d-block pb-3 policy">Policies</a>
+                            <a href="#" class="btn btn-outline-dark">Cookie Settings</a>
+                            </div>
+                        </div>
+                        <!--Contact Us -->
+                        <div class="col d-flex justify-content-end">
+                           <a href="#" data-delay=".1s" class="bounce btn btn-yellow btn-lg d-inline-flex justify-content-center align-items-center rounded-0 border-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone-fill mr-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                </svg>
+                                CONTACT US
+                           </a>
+                        </div>
+                    </div>
+                    <!-- Copyright with logo -->
+                    <div class="copyright d-flex justify-content-between align-items-center pt-5 mt-3 pb-3">
+                        <a href="index.html" class="logo" rel="home">
+                            <img class="logo zoomIn" data-delay=".1s" src="assets/logo.png" alt="The text Nikon is in black capital letters, and it lies at the bottom of the yellow square with white streaks across the background. The image links to the home page">
+                        </a>
+                        <small>&#169 2023 Nikon Optical Ltd, All rights reserved. </small>
+                    </div>
+                </div>
+            </footer>
+            <!--/Footer-->
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+        <script src="js/mobile-menu-close.js" type="text/javascript"></script>
+        <script src="js/animate-on-scroll.js" type="text/javascript"></script>
+    </body>
+</html>
