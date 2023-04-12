@@ -406,6 +406,12 @@ footer small {
     font-size: 15px;
 }
 
+.policy:hover,
+.policy:focus,
+.policy:active {
+    color: var(--highlight-color);
+}
+
 /*======= MEDIA QUERIES ======*/
 
 /*Samll Laptops*/
@@ -485,6 +491,12 @@ footer small {
    }
    .hamburger-close {
     display: none;
+   }
+   .hamburger-hide-js {
+    display: none;
+   }
+   .hamburger-show-js {
+    display: inline;
    }
    .mobile-dropdown .dropdown-item {
     padding: 17px 15px;
